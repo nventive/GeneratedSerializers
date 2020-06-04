@@ -1,4 +1,4 @@
-﻿trigger:
+trigger:
   branches:
     include:
     - master
@@ -55,7 +55,7 @@ stages:
       name: Container
 
     workspace:
-      clean: all # Cleanup the workspaca before starting
+      clean: all # Cleanup the workspace before starting
 
     steps:
     - template: stage-release.yml
