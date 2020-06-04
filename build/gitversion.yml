@@ -1,6 +1,6 @@
 assembly-versioning-scheme: MajorMinorPatch
 mode: ContinuousDeployment
-next-version: 0.1.0
+next-version: 0.2.0
 continuous-delivery-fallback-tag: ""
 increment: none # Disabled as it is not used. Saves time on the GitVersion step
 branches:
@@ -21,10 +21,6 @@ branches:
   dev:
     regex: dev/.*?/(.*?)
     tag: dev.{BranchName}
-    source-branches: [master]
-  projects:
-    regex: projects/(.*?)
-    tag: proj-{BranchName}
     source-branches: [master]
   feature:
     tag: ^feature.{BranchName}
