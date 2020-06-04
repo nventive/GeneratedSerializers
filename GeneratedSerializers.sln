@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneratedSerializers.Json", "src\GeneratedSerializers.Json\GeneratedSerializers.Json.csproj", "{268AD203-5B7C-4D74-9593-C05F6AAC9695}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneratedSerializers.Tests", "src\GeneratedSerializers.Tests\GeneratedSerializers.Tests.csproj", "{A955A757-BF03-42F4-B4E0-238541499114}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedSerializers.Generator", "src\GeneratedSerializers.Generator\GeneratedSerializers.Generator.csproj", "{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|NuGet = Debug|NuGet
+		Release|Any CPU = Release|Any CPU
+		Release|NuGet = Release|NuGet
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Debug|NuGet.ActiveCfg = Debug|Any CPU
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Debug|NuGet.Build.0 = Debug|Any CPU
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Release|NuGet.ActiveCfg = Release|Any CPU
+		{268AD203-5B7C-4D74-9593-C05F6AAC9695}.Release|NuGet.Build.0 = Release|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Debug|NuGet.ActiveCfg = Debug|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Debug|NuGet.Build.0 = Debug|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Release|NuGet.ActiveCfg = Release|Any CPU
+		{A955A757-BF03-42F4-B4E0-238541499114}.Release|NuGet.Build.0 = Release|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Debug|NuGet.ActiveCfg = Debug|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Debug|NuGet.Build.0 = Debug|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Release|NuGet.ActiveCfg = Release|Any CPU
+		{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}.Release|NuGet.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BA7DD68-E008-4F53-8F51-83D42D3877B9}
+	EndGlobalSection
+EndGlobal

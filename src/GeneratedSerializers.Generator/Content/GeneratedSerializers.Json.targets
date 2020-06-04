@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- Legacy declaration for backward compatibility -->
+	<Target Name="StaticSerializerGeneration" />
+ 
+	<Target Name="ValidatePackageAssets"
+			BeforeTargets="Pack">
+	  <Warning Condition="'$(SuppressNventiveSerializationTargetsWarning)'!='true'"
+			   Text="The package being built is dependent on Uno.Serialization, which relies on targets. To make them available in the package being built, the GeneratedSerializers PackageReference or the PackageReference which depends on GeneratedSerializers must have its PrivateAssets attribute set to None. This warning can be disabled by setting SuppressNventiveSerializationTargetsWarning to true." />
+	</Target>
+
+</Project>

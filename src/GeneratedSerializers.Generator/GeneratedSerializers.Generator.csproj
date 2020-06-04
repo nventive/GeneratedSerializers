@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputPath Condition="'$(OutputPath)' == ''">bin\$(Platform)\$(Configuration)</OutputPath>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6496FD7A-3AB0-448F-BD7C-34E0AC59AE2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneratedSerializers</RootNamespace>
+    <AssemblyName>GeneratedSerializers.Generator</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator">
+      <Version>1.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Uno.Core">
+      <Version>1.29.0</Version>
+    </PackageReference>
+    <PackageReference Include="Uno.SourceGeneration">
+      <Version>1.32.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\PropertyInfoExtensions.cs" />
+    <Compile Include="Extensions\SymbolExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Generators\Json\Builders.cs" />
+    <Compile Include="Generators\Json\Enums.cs" />
+    <Compile Include="Helpers\AnalyzerSuppressions.cs" />
+    <Compile Include="Helpers\PathHelper.cs" />
+    <Compile Include="Helpers\RoslynMetadataHelper.cs" />
+    <Compile Include="Helpers\SymbolExtensions.cs" />
+    <Compile Include="SourceGenerator\PropertyFinderExtensions.cs" />
+    <Compile Include="SourceGenerator\SerializerGenerationTask.cs" />
+    <Compile Include="Utils\ImplementationResolution\CollectionImplementation.cs" />
+    <Compile Include="Utils\ImplementationResolution\CollectionImplementationResolver.cs" />
+    <Compile Include="Utils\ImplementationResolution\ICollectionImplementation.cs" />
+    <Compile Include="Utils\ImplementationResolution\ICollectionImplementationResolver.cs" />
+    <Compile Include="Utils\ImplementationResolution\IImplementation.cs" />
+    <Compile Include="Utils\SourceFileMetadata.cs" />
+    <Compile Include="Utils\ImplementationResolution\IImplementationResolver.cs" />
+    <Compile Include="Utils\WellKnownTypes.cs" />
+    <Compile Include="ValueGenerators\Utils\CompositeValueGenerator.cs" />
+    <Compile Include="Helpers\VariableHelper.cs" />
+    <Compile Include="ITypeResolver.cs" />
+    <Compile Include="IStaticSerializerResolver.cs" />
+    <Compile Include="CodeAnalyzers\JsonCustomDeserializerPropertyFinder.cs" />
+    <Compile Include="CodeAnalyzers\DefaultPropertyFinder.cs" />
+    <Compile Include="CodeAnalyzers\JsonStaticDeserializerPropertyFinder.cs" />
+    <Compile Include="Generators\ModuleGenerator.cs" />
+    <Compile Include="IPropertySerializerGenerator.cs" />
+    <Compile Include="IPropertyFinder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerializationType.cs" />
+    <Compile Include="SerializerConstants.cs" />
+    <Compile Include="SerializerGenerationConfiguration.cs" />
+    <Compile Include="Generators\StaticSerializer.cs" />
+    <Compile Include="Generators\Json\Custom.cs" />
+    <Compile Include="Generators\Json\Classes.cs" />
+    <Compile Include="Generators\Json\ValueTypes.cs" />
+    <EmbeddedResource Include="Templates\StaticSerializer.cs" />
+    <Compile Include="TypeExtensions.cs" />
+    <Compile Include="ValueGenerators\Json\CustomSerializerGenerator.cs" />
+    <Compile Include="ValueGenerators\EnumGenerator.cs" />
+    <Compile Include="ValueGenerators\Json\JsonCollectionGenerator.cs" />
+    <Compile Include="ValueGenerators\Utils\ValueSerializationGeneratorExtensions.cs" />
+    <Compile Include="ValueGenerators\DateTimeGenerator.cs" />
+    <Compile Include="ValueGenerators\GuidGenerator.cs" />
+    <Compile Include="ValueGenerators\IValueSerializationGenerator.cs" />
+    <Compile Include="ValueGenerators\Json\JsonReaderGenerator.cs" />
+    <Compile Include="ValueGenerators\Json\MicrosotDateTimeGenerator.cs" />
+    <Compile Include="ValueGenerators\GeneratorContext.cs" />
+    <Compile Include="ValueGenerators\Json\RecursiveStaticSerializerGenerator.cs" />
+    <Compile Include="ValueGenerators\Json\JsonWriterGenerator.cs" />
+    <Compile Include="ValueGenerators\Utils\TypeGeneratorBase.cs" />
+    <Compile Include="ValueGenerators\UriGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Content\GeneratedSerializers.Json.targets">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Content\GeneratedSerializers.Json.props">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Doc\StaticSerializers.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

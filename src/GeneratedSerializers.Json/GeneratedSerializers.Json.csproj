@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<RootNamespace>GeneratedSerializers</RootNamespace>
+		<Authors>nventive</Authors>
+		<Company>nventive</Company>
+		<AssemblyName>GeneratedSerializers.Json</AssemblyName>
+		<PackageId>GeneratedSerializers.Json</PackageId>
+		<Description>GeneratedSerializers.Json</Description>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\GeneratedSerializers.Generator\GeneratedSerializers.Generator.csproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+			<SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
+			<UndefineProperties>TargetFramework</UndefineProperties>
+		</ProjectReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Uno.CodeGen" Version="1.32.0" />
+		<PackageReference Include="Uno.Core.Build" Version="1.29.0" IncludeAssets="all" PrivateAssets="none" />
+		<PackageReference Include="Uno.SourceGenerationTasks" Version="1.32.0" IncludeAssets="all" PrivateAssets="none">
+			<NoWarn>NU1701</NoWarn>
+		</PackageReference>
+	</ItemGroup>
+
+	<Target Name="AddManualDependencies" BeforeTargets="_GetPackageFiles">
+		<Message Text="Adding manual dependencies" />
+		<ItemGroup>
+			<Content Include="..\GeneratedSerializers.Generator\bin\$(Configuration)\GeneratedSerializers.Generator.*">
+				<Pack>true</Pack>
+				<PackagePath>tools</PackagePath>
+			</Content>
+			<Content Include="..\GeneratedSerializers.Generator\Content\GeneratedSerializers.*">
+				<Pack>true</Pack>
+				<PackagePath>build</PackagePath>
+			</Content>
+		</ItemGroup>
+	</Target>
+</Project>
