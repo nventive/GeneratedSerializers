@@ -6,11 +6,11 @@ trigger:
 resources:
    containers:
      - container: windows
-       image: nventive/build-agent:vs16.4.0
+       image: nventive/vs_build-tools:vs16.11.9
 
 variables:
 - name: NUGET_VERSION
-  value: 5.4.0
+  value: 5.9.1
 - name: VSTEST_PLATFORM_VERSION
   value: 15.9.2
 - name: ArtifactName
@@ -33,7 +33,7 @@ stages:
           GeneratePackageOnBuild: true
 
     pool:
-      name: Container
+      name: 'Windows 1809'
 
     variables:
     - name: PackageOutputPath # Path where nuget packages will be copied to.
@@ -54,7 +54,7 @@ stages:
   - job: Publish_NuGet_External
 
     pool:
-      name: Container
+      name: 'Windows 1809'
 
     workspace:
       clean: all # Cleanup the workspace before starting
