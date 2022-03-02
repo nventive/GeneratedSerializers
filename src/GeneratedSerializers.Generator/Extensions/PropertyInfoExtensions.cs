@@ -1,5 +1,4 @@
 ﻿using Microsoft.CodeAnalysis;
-using Uno.Extensions;
 using System;
 using System.Linq;
 using System.Reflection;

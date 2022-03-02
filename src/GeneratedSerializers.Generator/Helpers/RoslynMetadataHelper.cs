@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using Uno.Extensions;
 using Microsoft.CodeAnalysis;
 using System.Linq;
 using Microsoft.CodeAnalysis.FindSymbols;

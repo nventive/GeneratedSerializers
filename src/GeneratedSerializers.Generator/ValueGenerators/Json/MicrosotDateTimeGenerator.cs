@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
-using Uno.Extensions;
 using Uno.Logging;
 
 namespace GeneratedSerializers
@@ -50,7 +49,6 @@ namespace GeneratedSerializers
 				}
 				else
 				{
-					this.Log().Error(_nonSupportedTypeError);
 					return $"\r\n #error {_nonSupportedTypeError}";
 				}
 			}
@@ -99,7 +97,6 @@ namespace GeneratedSerializers
 				}
 				else
 				{
-					this.Log().Error(_nonSupportedTypeError);
 					return $"\r\n #error {_nonSupportedTypeError}";
 				}
 			}
