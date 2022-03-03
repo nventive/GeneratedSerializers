@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
-using Uno.Extensions;
 
 namespace GeneratedSerializers
 {
@@ -58,7 +57,6 @@ namespace GeneratedSerializers
 				"System",
 				"System.Collections.Generic",
 				"System.IO",
-				"Uno.Extensions",
 				"GeneratedSerializers",
 			};
 
