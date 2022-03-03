@@ -8,7 +8,6 @@ using System.IO;
 using System.Linq;
 using System.Security.Principal;
 using System.Xml.Serialization;
-using Uno.Extensions;
 using Uno.Logging;
 using Microsoft.Build.Execution;
 using Microsoft.CodeAnalysis;
@@ -154,7 +153,6 @@ namespace GeneratedSerializers
 			}
 
 			// Deserialize configuration file
-			this.Log().Debug($"Generate static deserializer using configuration file {_configFile}");
 			try
 			{
 				using (var fs = File.OpenRead(_configFile))

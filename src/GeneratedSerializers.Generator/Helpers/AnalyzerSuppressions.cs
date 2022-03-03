@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using Uno.Extensions;
 
 namespace GeneratedSerializers
 {

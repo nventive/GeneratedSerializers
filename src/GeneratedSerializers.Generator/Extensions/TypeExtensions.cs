@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using Uno.Extensions;
 using Microsoft.CodeAnalysis;
 using System.Collections.Immutable;
 

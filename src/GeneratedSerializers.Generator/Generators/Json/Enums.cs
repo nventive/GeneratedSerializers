@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Uno.Equality;
-using Uno.Extensions;
 using Uno;
 using Uno.Logging;
 using Microsoft.CodeAnalysis.CSharp;
@@ -46,7 +45,6 @@ namespace GeneratedSerializers
 			using System.Collections.Generic;
 			using System.Linq;
 			using System.Text;
-			using Uno.Extensions;
 			using GeneratedSerializers;
 
 			namespace {_nameSpace}
@@ -257,7 +255,6 @@ namespace GeneratedSerializers
 			}
 			else if (!_isMissingFallbackAllowed)
 			{
-				this.Log().Error($"You must define the {typeof (FallbackValueAttribute).Name} attribute for enum '{TEnum}'.");
 				return $"\r\n#error You must define the {typeof (FallbackValueAttribute).Name} attribute for enum '{TEnum}'.";
 			}
 			else if (_useTryParseOrDefault)
