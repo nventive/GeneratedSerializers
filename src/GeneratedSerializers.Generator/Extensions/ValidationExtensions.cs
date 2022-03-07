@@ -15,7 +15,7 @@
 //
 // ******************************************************************
 using System;
-using Uno.Validation;
+using GeneratedSerializers.Validation;
 
 namespace GeneratedSerializers.Extensions
 {

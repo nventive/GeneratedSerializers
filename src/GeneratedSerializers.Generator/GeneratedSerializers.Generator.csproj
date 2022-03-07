@@ -18,7 +18,7 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <TargetFrameworkProfile />
-	<LangVersion>9.0</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,6 +98,7 @@
     <Compile Include="Utils\SourceFileMetadata.cs" />
     <Compile Include="Utils\ImplementationResolution\IImplementationResolver.cs" />
     <Compile Include="Utils\WellKnownTypes.cs" />
+    <Compile Include="Validation\ValidationExtensionPoint.cs" />
     <Compile Include="ValueGenerators\Utils\CompositeValueGenerator.cs" />
     <Compile Include="Helpers\VariableHelper.cs" />
     <Compile Include="ITypeResolver.cs" />
