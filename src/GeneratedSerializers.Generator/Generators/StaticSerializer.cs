@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using GeneratedSerializers.Equality;
 using GeneratedSerializers.Extensions;
 using Microsoft.CodeAnalysis;
-using Uno.Equality;
 
 namespace GeneratedSerializers
 {

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
-using Uno.Equality;
 using Uno;
 using Microsoft.CodeAnalysis.CSharp;
 using GeneratedSerializers.Extensions;
+using GeneratedSerializers.Equality;
 
 namespace GeneratedSerializers
 {
