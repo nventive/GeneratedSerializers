@@ -4,7 +4,6 @@ using System.Linq;
 using Microsoft.CodeAnalysis;
 using Uno.Equality;
 using Uno;
-using Uno.Logging;
 using Microsoft.CodeAnalysis.CSharp;
 using GeneratedSerializers.Extensions;
 
