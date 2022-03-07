@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 // ******************************************************************
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	/// <summary>
 	/// Modes for asynchronous action / func invocation lock

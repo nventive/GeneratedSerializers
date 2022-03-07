@@ -21,7 +21,7 @@ using System.Linq;
 using Uno.Collections;
 using System.Collections.ObjectModel;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	/// <summary>
 	/// Provides Extensions Methods for IEnumerable.

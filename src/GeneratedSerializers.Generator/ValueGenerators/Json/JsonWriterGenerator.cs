@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using GeneratedSerializers.Extensions;
 using Microsoft.CodeAnalysis;
 
 namespace GeneratedSerializers

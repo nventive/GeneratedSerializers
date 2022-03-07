@@ -1,4 +1,5 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using GeneratedSerializers.Extensions;
+using Microsoft.CodeAnalysis;
 
 namespace GeneratedSerializers
 {

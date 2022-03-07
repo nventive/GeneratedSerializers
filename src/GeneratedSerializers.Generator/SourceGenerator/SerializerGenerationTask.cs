@@ -12,6 +12,7 @@ using Uno.Logging;
 using Microsoft.Build.Execution;
 using Microsoft.CodeAnalysis;
 using Uno.SourceGeneration;
+using GeneratedSerializers.Extensions;
 
 namespace GeneratedSerializers
 {

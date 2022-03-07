@@ -6,6 +6,7 @@ using Uno.Equality;
 using Uno;
 using Uno.Logging;
 using Microsoft.CodeAnalysis.CSharp;
+using GeneratedSerializers.Extensions;
 
 namespace GeneratedSerializers
 {

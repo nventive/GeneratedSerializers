@@ -16,7 +16,7 @@
 // ******************************************************************
 using System;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public class ExtensionPoint<T> : IExtensionPoint<T>
 	{

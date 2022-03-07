@@ -20,7 +20,7 @@ using System.Linq;
 using Uno.Collections;
 using Uno.Disposables;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	/// <summary>
 	/// Provides Extensions Methods for ICollection.

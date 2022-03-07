@@ -17,7 +17,7 @@
 using System;
 using Uno.Validation;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public static class ValidationExtensions
 	{

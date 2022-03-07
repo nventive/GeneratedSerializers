@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Text.RegularExpressions;
+using GeneratedSerializers.Extensions;
 using Microsoft.CodeAnalysis;
 
 namespace GeneratedSerializers

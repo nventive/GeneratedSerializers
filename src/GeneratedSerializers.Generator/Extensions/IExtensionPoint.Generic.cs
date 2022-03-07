@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 // ******************************************************************
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	internal interface IExtensionPoint<T> : IExtensionPoint
 	{

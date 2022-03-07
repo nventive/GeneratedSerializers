@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Uno.Collections;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public static class DictionaryExtensions
 	{

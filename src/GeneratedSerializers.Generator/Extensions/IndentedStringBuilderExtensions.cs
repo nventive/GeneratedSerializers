@@ -15,11 +15,9 @@
 //
 // ******************************************************************
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public static class IndentedStringBuilderExtensions
 	{

@@ -6,6 +6,7 @@ using Microsoft.CodeAnalysis.FindSymbols;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Uno;
+using GeneratedSerializers.Extensions;
 
 namespace GeneratedSerializers
 {

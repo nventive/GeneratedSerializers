@@ -16,7 +16,7 @@
 // ******************************************************************
 using System;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public interface IIndentedStringBuilder
 	{
