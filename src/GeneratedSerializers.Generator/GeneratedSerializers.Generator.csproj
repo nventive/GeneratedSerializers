@@ -57,6 +57,10 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="1.3.2" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Disposables\AnonymousDisposable.cs" />
+    <Compile Include="Disposables\DefaultDisposable.cs" />
+    <Compile Include="Disposables\Disposable.cs" />
+    <Compile Include="Disposables\ICancelable.cs" />
     <Compile Include="Equality\FuncEqualityComparer.cs" />
     <Compile Include="Extensions\AssemblyExtensions.cs" />
     <Compile Include="Extensions\CachedTuple.cs" />

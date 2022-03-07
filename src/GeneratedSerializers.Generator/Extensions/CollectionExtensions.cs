@@ -17,8 +17,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using GeneratedSerializers.Disposables;
 using Uno.Collections;
-using Uno.Disposables;
 
 namespace GeneratedSerializers.Extensions
 {
