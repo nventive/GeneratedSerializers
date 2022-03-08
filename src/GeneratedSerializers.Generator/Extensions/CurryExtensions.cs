@@ -18,7 +18,7 @@ using System;
 using System.Threading;
 using Uno;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public static class CurryExtensions
 	{

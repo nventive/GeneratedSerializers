@@ -24,7 +24,7 @@ using System.Text.RegularExpressions;
 
 #endregion
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public static partial class StringExtensions
 	{

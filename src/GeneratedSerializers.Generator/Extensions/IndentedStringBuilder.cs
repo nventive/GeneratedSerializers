@@ -15,10 +15,9 @@
 //
 // ******************************************************************
 using System;
-using System.Collections.Generic;
 using System.Text;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	/// <summary>
 	/// A C# code indented builder.

@@ -6,7 +6,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using Uno.Logging;
 using GeneratedSerializers;
 
 namespace %NAMESPACE%
@@ -34,12 +33,6 @@ namespace %NAMESPACE%
 			{
 				Instance = this;
 			}
-#if NETFX_CORE || XAMARIN
-			else
-			{
-				this.Log().Warn("Only one instance of %CLASS% can be created per app. Be sure to register it in the proper Container (Core).");
-			}
-#endif
 		}
 
 		public IObjectSerializer GetObjectSerializer()
@@ -71,7 +64,6 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				typeof(%CLASS%).Log().Warn("** PERFORMANCE HIT ** Try to resolve a serializer for a type which was not registered: " + typeName);
 				return null;
 			}
 		}

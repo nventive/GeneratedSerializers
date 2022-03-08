@@ -17,10 +17,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Uno.Collections;
-using Uno.Disposables;
+using GeneratedSerializers.Disposables;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	/// <summary>
 	/// Provides Extensions Methods for ICollection.

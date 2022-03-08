@@ -25,7 +25,7 @@ using System.Threading.Tasks;
 using System.Collections.Concurrent;
 #endif
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public static class FuncMemoizeExtensions
 	{

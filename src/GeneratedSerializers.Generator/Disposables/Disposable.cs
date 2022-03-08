@@ -14,21 +14,28 @@
 // limitations under the License.
 //
 // ******************************************************************
-namespace GeneratedSerializers.Extensions
+using System;
+
+namespace GeneratedSerializers.Disposables
 {
 	/// <summary>
-	/// Modes for asynchronous action / func invocation lock
+	/// Provides a set of static methods for creating Disposables.
 	/// </summary>
-	public enum InvocationLockingMode
+	public static class Disposable
 	{
 		/// <summary>
-		/// Invocations are queued and sequencially
+		/// Gets the disposable that does nothing when disposed.
 		/// </summary>
-		Serial,
+		public static IDisposable Empty
+			=> DefaultDisposable.Instance;
 
 		/// <summary>
-		/// Invocation re-use result of any pending running instance
+		/// Creates a disposable object that invokes the specified action when disposed.
 		/// </summary>
-		Share,
+		/// <param name="dispose">Action to run during the first call to <see cref="IDisposable.Dispose"/>. The action is guaranteed to be run at most once.</param>
+		/// <returns>The disposable object that runs the given action upon disposal.</returns>
+		/// <exception cref="ArgumentNullException"><paramref name="dispose"/> is null.</exception>
+		public static IDisposable Create(Action dispose)
+			=> new AnonymousDisposable(dispose ?? throw new ArgumentNullException(nameof(dispose)));
 	}
 }

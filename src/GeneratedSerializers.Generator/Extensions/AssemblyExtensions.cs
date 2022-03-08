@@ -19,7 +19,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	public static class AssemblyExtensions
 	{

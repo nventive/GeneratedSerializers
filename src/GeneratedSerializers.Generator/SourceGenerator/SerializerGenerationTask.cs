@@ -8,10 +8,10 @@ using System.IO;
 using System.Linq;
 using System.Security.Principal;
 using System.Xml.Serialization;
-using Uno.Logging;
 using Microsoft.Build.Execution;
 using Microsoft.CodeAnalysis;
 using Uno.SourceGeneration;
+using GeneratedSerializers.Extensions;
 
 namespace GeneratedSerializers
 {
