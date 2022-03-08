@@ -18,7 +18,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using GeneratedSerializers.Disposables;
-using Uno.Collections;
 
 namespace GeneratedSerializers.Extensions
 {
