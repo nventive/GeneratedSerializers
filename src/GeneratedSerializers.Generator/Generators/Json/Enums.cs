@@ -6,6 +6,7 @@ using Uno;
 using Microsoft.CodeAnalysis.CSharp;
 using GeneratedSerializers.Extensions;
 using GeneratedSerializers.Equality;
+using GeneratedSerializers.Helpers;
 
 namespace GeneratedSerializers
 {

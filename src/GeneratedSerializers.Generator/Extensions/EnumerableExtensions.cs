@@ -25,7 +25,7 @@ namespace GeneratedSerializers.Extensions
 	/// <summary>
 	/// Provides Extensions Methods for IEnumerable.
 	/// </summary>
-	public static partial class EnumerableExtensions
+	internal static partial class EnumerableExtensions
 	{
 		//[Obsolete("Refactor to use .Do() instead. Will potentially enumerate the source more than once.")]
 		public static IEnumerable<T> ForEach<T>(this IEnumerable<T> items, Action<KeyValuePair<int, T>> action)

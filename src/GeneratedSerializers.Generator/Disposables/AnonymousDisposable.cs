@@ -22,7 +22,7 @@ namespace GeneratedSerializers.Disposables
 	/// <summary>
 	/// Represents an Action-based disposable.
 	/// </summary>
-	public sealed class AnonymousDisposable : ICancelable
+	internal sealed class AnonymousDisposable : ICancelable
 	{
 		private volatile Action? _dispose;
 

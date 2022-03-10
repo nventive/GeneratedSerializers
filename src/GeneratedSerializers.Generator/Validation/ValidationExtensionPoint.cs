@@ -18,7 +18,7 @@ using GeneratedSerializers.Extensions;
 
 namespace GeneratedSerializers.Validation
 {
-	public class ValidationExtensionPoint<T> : ExtensionPoint<T>
+	internal class ValidationExtensionPoint<T> : ExtensionPoint<T>
 	{
 		public ValidationExtensionPoint(T value)
 			: base(value)

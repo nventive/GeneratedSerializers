@@ -14,43 +14,14 @@
 // limitations under the License.
 //
 // ******************************************************************
-using System;
+using System.Threading;
+using System.Threading.Tasks;
 
-namespace GeneratedSerializers.Extensions
+namespace GeneratedSerializers.Helpers
 {
-	internal class ExtensionPoint<T> : IExtensionPoint<T>
-	{
-		private readonly Type type;
-		private readonly T value;
-
-		public ExtensionPoint(T value)
-		{
-			this.value = value;
-		}
-
-		public ExtensionPoint(Type type)
-		{
-			this.type = type;
-		}
-
-		#region IExtensionPoint<T> Members
-
-		public T ExtendedValue
-		{
-			get { return value; }
-		}
-
-		object IExtensionPoint.ExtendedValue
-		{
-			get { return value; }
-		}
-
-		public Type ExtendedType
-		{
-			// TODO: value might not be null
-			get { return type ?? (value == null ? typeof(T) : value.GetType()); }
-		}
-
-		#endregion
-	}
+	internal delegate Task ActionAsync(CancellationToken ct);
+	internal delegate Task ActionAsync<in T1>(CancellationToken ct, T1 value);
+	internal delegate Task ActionAsync<in T1, in T2>(CancellationToken ct, T1 t1, T2 t2);
+	internal delegate Task ActionAsync<in T1, in T2, in T3>(CancellationToken ct, T1 t1, T2 t2, T3 t3);
+	internal delegate Task ActionAsync<in T1, in T2, in T3, in T4>(CancellationToken ct, T1 t1, T2 t2, T3 t3, T4 t4);
 }
