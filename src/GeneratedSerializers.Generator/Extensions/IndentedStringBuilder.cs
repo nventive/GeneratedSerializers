@@ -22,7 +22,7 @@ namespace GeneratedSerializers.Extensions
 	/// <summary>
 	/// A C# code indented builder.
 	/// </summary>
-	public class IndentedStringBuilder : IIndentedStringBuilder
+	internal class IndentedStringBuilder : IIndentedStringBuilder
 	{
 		private readonly StringBuilder _stringBuilder;
 

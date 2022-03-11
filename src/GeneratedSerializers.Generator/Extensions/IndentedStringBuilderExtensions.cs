@@ -19,7 +19,7 @@ using System.Globalization;
 
 namespace GeneratedSerializers.Extensions
 {
-	public static class IndentedStringBuilderExtensions
+	internal static class IndentedStringBuilderExtensions
 	{
 		public static void AppendLine(this IIndentedStringBuilder builder, IFormatProvider formatProvider, string pattern, params object[] replacements)
 		{

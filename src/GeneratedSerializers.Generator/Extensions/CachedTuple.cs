@@ -14,16 +14,14 @@
 // limitations under the License.
 //
 // ******************************************************************
-using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
 	/// <summary>
 	/// A tuple implementation that caches the GetHashCode value for faster lookup performance.
 	/// </summary>
-	public class CachedTuple
+	internal class CachedTuple
 	{
 		/// <summary>
 		/// Creates a tuple with two values.
@@ -53,7 +51,7 @@ namespace GeneratedSerializers
 	/// <summary>
 	/// A tuple with two values implementation that caches the GetHashCode value for faster lookup performance.
 	/// </summary>
-	public class CachedTuple<T1, T2>
+	internal class CachedTuple<T1, T2>
 	{
 		private readonly int _cachedHashCode;
 
@@ -113,7 +111,7 @@ namespace GeneratedSerializers
 	/// <summary>
 	/// A tuple with three values implementation that caches the GetHashCode value for faster lookup performance.
 	/// </summary>
-	public class CachedTuple<T1, T2, T3>
+	internal class CachedTuple<T1, T2, T3>
 	{
 		private readonly int _cachedHashCode;
 
@@ -178,7 +176,7 @@ namespace GeneratedSerializers
 	/// <summary>
 	/// A tuple with four values implementation that caches the GetHashCode value for faster lookup performance.
 	/// </summary>
-	public class CachedTuple<T1, T2, T3, T4>
+	internal class CachedTuple<T1, T2, T3, T4>
 	{
 		private readonly int _cachedHashCode;
 

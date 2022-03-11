@@ -7,6 +7,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Uno;
 using GeneratedSerializers.Extensions;
+using GeneratedSerializers.Helpers;
 
 namespace GeneratedSerializers
 {

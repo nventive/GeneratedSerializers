@@ -24,7 +24,7 @@ namespace GeneratedSerializers.Equality
 	/// Allows <see cref="FuncEqualityComparer{T}"/> methods to be called without specifying the compared 
 	/// type explicitely, which simplifies the syntax and allows for equality comparisons on anonymous types
 	/// </summary>
-	public class FuncEqualityComparer
+	internal class FuncEqualityComparer
 	{
 		/// <summary>
 		/// Creates an <see cref="IEqualityComparer{T}"/> which determine objects equality and hash codes based on a value obtained using a selector.

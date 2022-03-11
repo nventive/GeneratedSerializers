@@ -16,9 +16,9 @@
 // ******************************************************************
 using System;
 
-namespace GeneratedSerializers
+namespace GeneratedSerializers.Extensions
 {
-	public class DisposableAction : IDisposable
+	internal class DisposableAction : IDisposable
 	{
 		public DisposableAction(Action action)
 		{

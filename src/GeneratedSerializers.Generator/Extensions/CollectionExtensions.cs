@@ -24,7 +24,7 @@ namespace GeneratedSerializers.Extensions
 	/// <summary>
 	/// Provides Extensions Methods for ICollection.
 	/// </summary>
-	public static class CollectionExtensions
+	internal static class CollectionExtensions
 	{
 		/// <summary>
 		/// Adds a new item with the default constructor

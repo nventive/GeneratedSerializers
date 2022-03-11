@@ -16,11 +16,11 @@
 // ******************************************************************
 using System;
 using System.Threading;
-using Uno;
+using GeneratedSerializers.Helpers;
 
 namespace GeneratedSerializers.Extensions
 {
-	public static class CurryExtensions
+	internal static class CurryExtensions
 	{
 		#region Func currying extenions
 

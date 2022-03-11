@@ -18,7 +18,7 @@ using System;
 
 namespace GeneratedSerializers.Extensions
 {
-	public interface IIndentedStringBuilder
+	internal interface IIndentedStringBuilder
 	{
 		/// <summary>
 		/// Gets the current indentation level

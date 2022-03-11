@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommonServiceLocator" Version="2.0.5" />
-    <PackageReference Include="Uno.Core" Version="4.0.1" />
     <PackageReference Include="Uno.SourceGeneration" Version="4.0.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="1.3.2" />
   </ItemGroup>
@@ -94,6 +93,9 @@
     <Compile Include="Helpers\SymbolExtensions.cs" />
     <Compile Include="SourceGenerator\PropertyFinderExtensions.cs" />
     <Compile Include="SourceGenerator\SerializerGenerationTask.cs" />
+    <Compile Include="Helpers\ActionAsync.cs" />
+    <Compile Include="Helpers\FallbackValueAttribute.cs" />
+    <Compile Include="Helpers\Funcs.cs" />
     <Compile Include="Utils\ImplementationResolution\CollectionImplementation.cs" />
     <Compile Include="Utils\ImplementationResolution\CollectionImplementationResolver.cs" />
     <Compile Include="Utils\ImplementationResolution\ICollectionImplementation.cs" />
