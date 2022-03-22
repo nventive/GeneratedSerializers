@@ -120,11 +120,11 @@ namespace GeneratedSerializers
 			if (name.EndsWith("?"))
 			{
 				name = name.Substring(0, name.Length - 1);
-				return $"System.Nullable<{_fullNamesMaping.UnoGetValueOrDefault(name, name)}>";
+				return $"System.Nullable<{_fullNamesMaping.GeneratedSerializerGetValueOrDefault(name, name)}>";
 			}
 			else
 			{
-				return _fullNamesMaping.UnoGetValueOrDefault(name, name);
+				return _fullNamesMaping.GeneratedSerializerGetValueOrDefault(name, name);
 			}
 		}
 

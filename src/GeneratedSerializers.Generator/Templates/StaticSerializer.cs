@@ -87,7 +87,7 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(typeof(T).ToString()));
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, typeof(T).ToString()));
 			}
 		}
 
@@ -112,8 +112,8 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(typeof(T).ToString()));
-			}
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, typeof(T).ToString()));
+	}
 		}
 
 		bool IObjectSerializer.IsSerializable(Type valueType)
@@ -141,7 +141,7 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(valueType.ToString()));
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, valueType.ToString()));
 			}
 		}
 
@@ -166,8 +166,8 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(valueType.ToString()));
-			}
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, valueType.ToString()));
+	}
 		}
 
 		void IObjectSerializer.WriteToString(object value, Type valueType, StringBuilder targetString)
@@ -186,8 +186,8 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(valueType.ToString()));
-			}
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, valueType.ToString()));
+	}
 		}
 
 		void IObjectSerializer.WriteToStream(object value, Type valueType, Stream targetStream, bool canDisposeTargetStream = true)
@@ -206,8 +206,8 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(valueType.ToString()));
-			}
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, valueType.ToString()));
+	}
 		}
 
 		object IObjectSerializer.FromString(string value, Type targetType)
@@ -227,7 +227,7 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(targetType.ToString()));
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, targetType.ToString()));
 			}
 		}
 
@@ -248,8 +248,8 @@ private static readonly System.Collections.Concurrent.ConcurrentDictionary<Type,
 			}
 			else
 			{
-				throw new ArgumentOutOfRangeException(_notRegisteredError.InvariantCultureFormat(targetType.ToString()));
-			}
+				throw new ArgumentOutOfRangeException(string.Format(System.Globalization.CultureInfo.InvariantCulture, _notRegisteredError, targetType.ToString()));
+	}
 		}
 
 		private static class Holder<T>

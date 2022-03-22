@@ -59,6 +59,7 @@ namespace GeneratedSerializers
 				"System.Collections.Generic",
 				"System.IO",
 				"GeneratedSerializers",
+				"Uno.Extensions",
 			};
 
 			foreach (var ns in type
