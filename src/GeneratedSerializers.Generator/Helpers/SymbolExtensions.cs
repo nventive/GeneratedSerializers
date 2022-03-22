@@ -265,7 +265,7 @@ namespace Microsoft.CodeAnalysis
 
 			var name = type.ToDisplayString();
 			
-			return _fullNamesMaping.UnoGetValueOrDefault(name, name);
+			return _fullNamesMaping.GeneratedSerializerGetValueOrDefault(name, name);
 		}
 
 		public static string GetFullMetadataName(this INamespaceOrTypeSymbol symbol)

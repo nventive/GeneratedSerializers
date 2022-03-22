@@ -38,27 +38,29 @@ namespace GeneratedSerializers.Extensions
 		/// <summary>
 		/// Gets the value associated with the specified key, or a default value.
 		/// </summary>
+		/// <remarks>GeneratedSerializerGetValueOrDefault methodname is unique to unsure we don't have a naming clash</remarks>
 		/// <typeparam name="TKey"></typeparam>
 		/// <typeparam name="TValue"></typeparam>
 		/// <param name="dictionary"></param>
 		/// <param name="key">The key of the value to get.</param>
 		/// <param name="defaultValue">Default value if the key does not exsists in dictionary</param>
 		/// <returns>the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter.</returns>
-		public static TValue UnoGetValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key)
+		public static TValue GeneratedSerializerGetValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key)
 		{
-			return UnoGetValueOrDefault(dictionary, key, default(TValue));
+			return GeneratedSerializerGetValueOrDefault(dictionary, key, default(TValue));
 		}
 
 		/// <summary>
 		/// Gets the value associated with the specified key, or a default value.
 		/// </summary>
+		/// <remarks>GeneratedSerializerGetValueOrDefault methodname is unique to unsure we don't have a naming clash</remarks>
 		/// <typeparam name="TKey"></typeparam>
 		/// <typeparam name="TValue"></typeparam>
 		/// <param name="dictionary"></param>
 		/// <param name="key">The key of the value to get.</param>
 		/// <param name="defaultValue">Default value if the key does not exsists in dictionary</param>
 		/// <returns>the value associated with the specified key, if the key is found; otherwise, the <paramref name="defaultValue"/>.</returns>
-		public static TValue UnoGetValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, TValue defaultValue)
+		public static TValue GeneratedSerializerGetValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, TValue defaultValue)
 		{
 			if (dictionary == null)
 			{

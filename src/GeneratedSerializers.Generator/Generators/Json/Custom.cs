@@ -35,6 +35,7 @@ namespace GeneratedSerializers
 				"System.Collections.Generic",
 				"System.IO",
 				"GeneratedSerializers",
+				"Uno.Extensions",
 			};
 
 			var entityType = GetTypeParameter(type);

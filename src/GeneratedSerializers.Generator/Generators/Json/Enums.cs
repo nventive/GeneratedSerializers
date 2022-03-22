@@ -271,7 +271,7 @@ namespace GeneratedSerializers
 						return default({TEnum});
 					}}";
 
-				return $@"throw new FormatException(""'{{0}}' is not valid value for {TEnum}."".InvariantCultureFormat(value));";
+				return $@"throw new FormatException(string.Format(System.Globalization.CultureInfo.InvariantCulture, ""'{{0}}' is not valid value for {TEnum}.""), value);";
 			}
 		}
 	}
