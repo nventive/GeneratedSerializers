@@ -25,3 +25,6 @@ Uno.Core classes were added and changed accessibility to internal
 
 ### Removed
 Uno.Core dependencies
+
+### Changed
+- Updated Contributing documentation.
